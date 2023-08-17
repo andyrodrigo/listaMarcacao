@@ -1,0 +1,9 @@
+.caixa-linha {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  margin-top: 10px;
+}
+
+.caixa-nome {
+  cursor: move;
+}

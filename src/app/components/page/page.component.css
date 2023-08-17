@@ -1,0 +1,13 @@
+.caixa-page {
+  width: 800px;
+  height: 1000px;
+  background-color: aliceblue;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caixa-itens {
+  width: 95%;
+}

@@ -1,0 +1,7 @@
+<main class="caixa-page">
+  <section class="caixa-itens" cdkDropList (cdkDropListDropped)="drop($event)">
+    <div *ngFor="let item of itens" cdkDrag>
+      <app-linha [nome]="item"></app-linha>
+    </div>
+  </section>
+</main>
