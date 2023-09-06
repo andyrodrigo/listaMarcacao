@@ -1,0 +1,13 @@
+<button class="comum" [ngClass]="tipo" [class.disabled]="disabled">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    fill="currentColor"
+    viewBox="0 0 16 16"
+  >
+    <path [attr.d]="icone1" />
+    <path [attr.d]="icone2" />
+  </svg>
+  {{ valor }}
+</button>

@@ -1,0 +1,69 @@
+.comum {
+  border: none;
+  border-radius: 15px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.excluir,
+.fechar,
+.desmarcar {
+  color: #ef4444;
+}
+
+.excluir:hover,
+.fechar:hover,
+.desmarcar:hover {
+  background-color: #ff41360d;
+}
+
+.excluir:active,
+.fechar:active,
+.desmarcar:active {
+  background-color: #ff41361a;
+}
+
+.editar {
+  color: #0000ff;
+}
+
+.editar:hover {
+  background-color: #0000ff0d;
+}
+
+.editar:active {
+  background-color: #0000ff1a;
+}
+
+.confirmar,
+.confirmar_pessoa {
+  color: #008000;
+}
+
+.confirmar:hover,
+.confirmar_pessoa:hover {
+  background-color: #0080000d;
+}
+
+.confirmar:active,
+.confirmar_pessoa:active {
+  background-color: #0080001a;
+}
+
+.adicionar {
+  color: #006400;
+}
+
+.adicionar:hover {
+  background-color: #0080000d;
+}
+
+.adicionar:active {
+  background-color: #0080001a;
+}

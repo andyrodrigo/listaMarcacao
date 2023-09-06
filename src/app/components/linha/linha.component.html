@@ -1,3 +1,12 @@
 <main class="caixa-linha">
-  <div class="caixa-nome">{{ nome }}</div>
+  <div class="caixa-nome">
+    <p [ngStyle]="{ textDecoration: pessoa.riscado ? 'line-through' : 'none' }">
+      {{ pessoa.nome }}
+    </p>
+  </div>
+  <div>
+    <app-bto tipo="confirmar_pessoa" (click)="riscar()"></app-bto>
+    <app-bto tipo="editar" (click)="editarNome()"></app-bto>
+    <app-bto tipo="excluir" (click)="chamarExclusao()"></app-bto>
+  </div>
 </main>

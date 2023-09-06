@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>{{ data.mensagem }}</h1>
+<div mat-dialog-actions class="rodape">
+  <app-bto tipo="fechar" (click)="rejeitar()" valor="Cancelar"> </app-bto>
+  <app-bto
+    tipo="confirmar"
+    (click)="confirmar()"
+    valor="Ok"
+    cdkFocusInitial
+  ></app-bto>
+</div>

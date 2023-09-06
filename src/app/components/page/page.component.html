@@ -1,7 +1,21 @@
 <main class="caixa-page">
+  <div class="caixa-botoes">
+    <app-bto tipo="adicionar" valor="Adicionar" (click)="adicionar()"></app-bto>
+    <app-bto
+      tipo="desmarcar"
+      valor="Desmarcar Todos"
+      (click)="desmarcarTodos()"
+      [disabled]="itens.length < 1"
+    ></app-bto>
+  </div>
+
   <section class="caixa-itens" cdkDropList (cdkDropListDropped)="drop($event)">
     <div *ngFor="let item of itens" cdkDrag>
-      <app-linha [nome]="item"></app-linha>
+      <app-linha
+        [pessoa]="item"
+        (emitir)="receberPessoa($event)"
+        (salvar)="salvarDados()"
+      ></app-linha>
     </div>
   </section>
 </main>
