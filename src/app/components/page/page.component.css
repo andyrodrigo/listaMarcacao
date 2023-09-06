@@ -1,7 +1,6 @@
 .caixa-page {
   max-width: 800px;
   height: 1000px;
-  background-color: aliceblue;
   margin: 10px;
   display: flex;
   flex-direction: column;
